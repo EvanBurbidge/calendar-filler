@@ -10,7 +10,6 @@ const getFormattedMonth = (month) => {
   return monthToUse
 }
 const getFormattedDay = (day) => {
-  const monthToUse = month + 1;
   if (day < 10) {
     return `0${day}`
   }
