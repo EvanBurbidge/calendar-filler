@@ -1,6 +1,6 @@
 {
   "name": "calendar-filler",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A package to help you fill in the days of the month and pad for 7 by 6 calendar grids",
   "main": "index.js",
   "scripts": {
