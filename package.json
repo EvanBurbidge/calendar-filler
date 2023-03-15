@@ -1,11 +1,12 @@
 {
   "name": "calendar-filler",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A package to help you fill in the days of the month and pad for 7 by 6 calendar grids",
   "main": "index.js",
   "scripts": {
     "test": "jest"
   },
+  "files": ["README.md", "index.js", "package.json"],
   "keywords": ["calendar", "days of the month", "filler", "dates", "calendars", "month view"],
   "author": "thewebuiguy@gmail.com",
   "license": "ISC",
@@ -14,5 +15,13 @@
     "babel-jest": "^29.5.0",
     "jest": "^29.5.0",
     "ts-jest": "^29.0.5"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EvanBurbidge/calendar-filler.git"
+  },
+  "bugs": {
+    "url": "https://github.com/EvanBurbidge/calendar-filler/issues"
+  },
+  "homepage": "https://github.com/EvanBurbidge/calendar-filler#readme"
 }
