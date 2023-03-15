@@ -122,5 +122,5 @@ test('it should test NOVEMBER 2023', () => {
 test('it should test DECEMBER 2023', () => {
   const results = generateCalendarMonth(2023, 11, false);
   expect(results[0].date).toBe('2023-12-01');
-  expect(results[results.length - 1].date).toBe('2024-12-31');
+  expect(results[results.length - 1].date).toBe('2023-12-31');
 });
