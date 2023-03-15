@@ -55,10 +55,10 @@ const padEndDates = (year, month, upTo) => {
 
 
 
-export function generateCalendarMonth(year, month) {
+export function generateCalendarMonth(year, month, shouldPad = true) {
   const date = new Date(year, month, 1);
   let results = generateDateArray(date, month);
-  if (results.length < 42) {
+  if (results.length < 42 && shouldPad) {
     if (results[0].day !== 0) {
       const startDates = padStartDate(year, month - 1, results[0].day);
       results = [...startDates, ...results];
