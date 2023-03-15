@@ -83,7 +83,7 @@ If you just want to get the days of a specific month then you can pass a third b
 
 import { generateCalendarMonth } from 'calendar-filler'
 
-const jan = generateCalendarMonth(2023, 0) // All months start from index 0 
+const jan = generateCalendarMonth(2023, 0, false) // All months start from index 0 
 /*
  [
       { date: '2023-01-01', day: 0 },
