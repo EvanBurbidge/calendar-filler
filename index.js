@@ -2,25 +2,18 @@ const gridSize = 42;
 
 const getDaysInMonth = (year, month) => new Date(year, month, 0).getDate();
 
+const padNumber = (num) => num < 10 ? `0${num}` : num;
+
 const getFormattedMonth = (month) => {
   const monthToUse = month + 1;
-  if (monthToUse < 10) {
-    return `0${monthToUse}`
-  }
-  return monthToUse
-}
-const getFormattedDay = (day) => {
-  if (day < 10) {
-    return `0${day}`
-  }
-  return day
+  return padNumber(monthToUse)  
 }
 
 const generateDateArray = (dateToUse, month) => {
   const results = []
   while(dateToUse.getMonth() === month) {
     results.push({
-      date: `${dateToUse.getYear()}-${getFormattedMonth(month)}-${getFormattedDay(dateToUse.getDate())}`,
+      date: `${dateToUse.getYear()}-${getFormattedMonth(month)}-${padNumber(dateToUse.getDate())}`,
       day: dateToUse.getDay()
     })
     dateToUse.setDate(dateToUse.getDate() + 1);
