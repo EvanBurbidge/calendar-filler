@@ -6,14 +6,17 @@ const padNumber = (num) => num < 10 ? `0${num}` : num;
 
 const getFormattedMonth = (month) => {
   const monthToUse = month + 1;
-  return padNumber(monthToUse)  
+  return padNumber(monthToUse)
 }
 
 const generateDateArray = (dateToUse, month) => {
   const results = []
   while(dateToUse.getMonth() === month) {
+    const yearToUse = dateToUse.getFullYear();
+    const dayToUse = padNumber(dateToUse.getDate());
+    const monthToUse = getFormattedMonth(month);
     results.push({
-      date: `${dateToUse.getFullYear()}-${getFormattedMonth(month)}-${padNumber(dateToUse.getDate())}`,
+      date: `${yearToUse}-${monthToUse}-${dayToUse}`,
       day: dateToUse.getDay()
     })
     dateToUse.setDate(dateToUse.getDate() + 1);
@@ -40,7 +43,7 @@ const getCorrectMonthAndYear = (year, month) => {
 
 const padStartDate = (year, month, upTo) => {
   const { monthToUse, yearToUse } = getCorrectMonthAndYear(year, month);
-  const daysInMonth = getDaysInMonth(yearToUse, monthToUse);
+  const daysInMonth = getDaysInMonth(yearToUse, monthToUse + 1);
   const startDate = new Date(yearToUse, monthToUse, daysInMonth - upTo);
   while(startDate.getDay() !== 0) {
     startDate.setDate(startDate.getDate() + 1);
