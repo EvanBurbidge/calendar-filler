@@ -13,7 +13,7 @@ const generateDateArray = (dateToUse, month) => {
   const results = []
   while(dateToUse.getMonth() === month) {
     results.push({
-      date: `${dateToUse.getYear()}-${getFormattedMonth(month)}-${padNumber(dateToUse.getDate())}`,
+      date: `${dateToUse.getFullYear()}-${getFormattedMonth(month)}-${padNumber(dateToUse.getDate())}`,
       day: dateToUse.getDay()
     })
     dateToUse.setDate(dateToUse.getDate() + 1);
