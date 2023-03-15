@@ -1,22 +1,21 @@
 {
-    "name": "calendar-filler",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
-    "scripts": {
-      "test": "jest"
-    },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
-    "devDependencies": {
-      "@babel/preset-env": "^7.20.2",
-      "babel-jest": "^29.5.0",
-      "jest": "^29.5.0",
-      "ts-jest": "^29.0.5"
-    },
-    "dependencies": {
-      "dayjs": "^1.11.7"
-    }
+  "name": "calendar-filler",
+  "version": "1.0.0",
+  "description": "A package to help you fill in the days of the month and pad for 7 by 6 calendar grids",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": ["calendar", "days of the month", "filler", "dates", "calendars", "month view"],
+  "author": "thewebuiguy@gmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/preset-env": "^7.20.2",
+    "babel-jest": "^29.5.0",
+    "jest": "^29.5.0",
+    "ts-jest": "^29.0.5"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.7"
   }
-  
+}
